@@ -93,7 +93,13 @@ class LinkedList {
     }
 
     find(value) {
-
+        let current = this.head
+        let index = 0
+        while (current) {
+            index++
+            if (current.value === value) return index
+            current = current.next
+        }
     }
 
     toString() {
