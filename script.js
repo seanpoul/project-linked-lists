@@ -41,7 +41,7 @@ class LinkedList {
     }
 
     size() {
-
+        console.log(this.length)
     }
 
     head() {
@@ -97,3 +97,10 @@ class LinkedList {
         }
     }
 }
+
+const linkedList = new LinkedList();
+
+linkedList.append(7);
+linkedList.append(true);
+linkedList.append(20);
+linkedList.print();
