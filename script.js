@@ -68,9 +68,7 @@ class LinkedList {
     pop() {
         if (this.tail) {
             this.length--;
-
             const tailNode = this.tail;
-
             let currentNode = this.head;
 
             while (currentNode.next != tailNode) {
@@ -87,7 +85,11 @@ class LinkedList {
     }
 
     contains(value) {
-
+        let current = this.head
+        while (current) {
+            if (current.value === value) return true
+            current = current.next
+        }
     }
 
     find(value) {
