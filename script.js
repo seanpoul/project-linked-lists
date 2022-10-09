@@ -44,12 +44,12 @@ class LinkedList {
         console.log(this.length)
     }
 
-    head() {
-
+    heads() {
+        console.log(this.head)
     }
 
-    tail() {
-
+    tails() {
+        console.log(this.tail)
     }
 
     at(index) {
@@ -103,4 +103,6 @@ const linkedList = new LinkedList();
 linkedList.append(7);
 linkedList.append(true);
 linkedList.append(20);
+linkedList.append(false);
+linkedList.append(99);
 linkedList.print();
