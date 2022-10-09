@@ -97,15 +97,14 @@ class LinkedList {
     }
 
     toString() {
-
-    }
-
-    print() {
         let current = this.head
+        let result = ""
         while (current) {
-            console.log(current.value)
+            result = result.concat(`( ${current.value} ) --> `)
             current = current.next
         }
+        result = result.concat(` null`);
+        console.log(result)
     }
 }
 
@@ -116,4 +115,4 @@ linkedList.append(true);
 linkedList.append(20);
 linkedList.append(false);
 linkedList.append(99);
-linkedList.print();
+linkedList.toString();
