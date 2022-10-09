@@ -53,7 +53,16 @@ class LinkedList {
     }
 
     at(index) {
-
+        if (index === 0) {
+            return this.head
+        }
+        let previousNode = null;
+        let currentNode = this.head;
+        for (let i = 0; i < index; i++) {
+            previousNode = currentNode;
+            currentNode = currentNode.next;
+        }
+        return currentNode
     }
 
     pop() {
